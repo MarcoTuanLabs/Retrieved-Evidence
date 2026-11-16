@@ -1,0 +1,39 @@
+{
+  "seed": 1319,
+  "questions": 200,
+  "methods": [
+    "paid_draft_fixed10",
+    "no_draft_fixed10"
+  ],
+  "planned_requests": 400,
+  "models": {
+    "qwen4b": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "total_parameters": 4022468096
+    },
+    "qwen8b": {
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "total_parameters": 8190735360
+    }
+  },
+  "datasets": {
+    "musique_development": {
+      "index": "index.sqlite",
+      "index_sha256": "3da0c9bf6a9dc58605ff8aa7f2ae28f22641e3ad848e32f2074baa084b224aeb",
+      "questions": 200
+    }
+  },
+  "dataset_order": [
+    "musique_development"
+  ],
+  "max_panel_seconds": 1800,
+  "max_startup_seconds": 600,
+  "model_cache": "/workspace/h19_model_cache",
+  "output": "/workspace/h19_baseline_capture",
+  "vault_output": "/vault/evidence_control_h19_baseline_20261115/capture",
+  "expected_gpu_family": "NVIDIA RTX PRO 6000",
+  "minimum_gpu_GiB": 90,
+  "data_scope": "Repeatedly exposed development; not new independent confirmation"
+}

@@ -1,0 +1,43 @@
+{
+  "seed": 1331,
+  "questions": 800,
+  "planned_requests": 3200,
+  "maximum_model_calls": 5600,
+  "maximum_writer_calls": 2400,
+  "methods": [
+    "bm25_direct",
+    "bm25_rewrite",
+    "prefix_only",
+    "relation_following"
+  ],
+  "datasets": {
+    "twowiki": {
+      "questions": 800,
+      "documents": 384857,
+      "index": "indices/twowiki.sqlite",
+      "index_sha256": "e415affea92e1fe6add7cf99a65d7be8f980a6486db2cbfff25b92a70c31d75b"
+    }
+  },
+  "models": {
+    "qwen4b": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "total_parameters": 4022468096
+    },
+    "qwen8b": {
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "total_parameters": 8190735360
+    }
+  },
+  "model_cache": "/workspace/h31_model_cache",
+  "output": "/workspace/h31_capture",
+  "vault_output": "/workspace/h31_local_backup",
+  "startup_seconds": 900,
+  "worker_seconds": 6600,
+  "capture_deadline_unix": 1794818700,
+  "goal_deadline_unix": 1794819600,
+  "gpu": "H100 SXM 80GB",
+  "resume_from": "/workspace/h31_phase0_capture",
+  "resume_mirror": "/workspace/h31_phase0_backup"
+}

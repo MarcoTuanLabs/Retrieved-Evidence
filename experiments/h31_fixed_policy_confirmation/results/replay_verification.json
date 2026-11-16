@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "requests": 3200,
+  "model_calls": 5322,
+  "rankings": 2261,
+  "physical_queries_verified": 5673,
+  "unique_SQL_reexecutions": 2642,
+  "max_BM25_score_error": 2.842170943040401e-14,
+  "full_policy_and_prompt_reconstruction": true,
+  "prefix_charged_once": true,
+  "no_gold_in_runtime": true,
+  "elapsed_seconds": 193.16427525004838
+}

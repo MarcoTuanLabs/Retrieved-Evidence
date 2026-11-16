@@ -1,0 +1,13 @@
+{
+  "selection_seed": "h31-confirmation-1331",
+  "twowiki_questions": 800,
+  "twowiki_quota_per_type": 200,
+  "selection": "AscendingSHA256(seed|id), excludepreviousIDs/exactquestions/evaluatedsupporttitles, andgreedilyenforcewithinpanelsupporttitleandexactquestiondisjointness.",
+  "policies": "FreezeexistingH29comparatorandH30relationpolicywithoutgrammarupdates; primaryprefix_onlyvsfixedrewrite, secondaryrelation_following; retainBM25directascheapfixedcontrol.",
+  "data_scope": "All4TwoWikitypesbalanced; notoriginaltypefrequencyestimation. Selectwithoutusinganswerquality,ruleacceptanceorquestiondifficulty.",
+  "musique": "InventoryunusedIDsandstrictsupport-title/decomposition-componentisolationintrainanddev. Ifcleanbalancedmultihoppanelisnotavailable, reportlimitation; do notsilentlyuseoverlappingsourcesasindependentconfirmation.",
+  "no_new_model_calls": true,
+  "official_test_forbidden": true,
+  "quota_failure": "Preserveinventoryandstopselection; do notrelaxeligibility.",
+  "created_unix": 1794790638.391969
+}

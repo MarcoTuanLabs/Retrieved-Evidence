@@ -1,0 +1,369 @@
+{
+  "questions": 800,
+  "source_groups": 800,
+  "methods": {
+    "bm25_direct": {
+      "f1": 0.4440546796085973,
+      "em": 0.345,
+      "work_TF": 17.8226271782528,
+      "seconds": 0.651671631814097,
+      "reader_TF": 17.8226271782528,
+      "writer_TF": 0.0,
+      "ranker_TF": 0.0,
+      "physical_queries": 1.0,
+      "retrieval_seconds": 0.2321596600662451,
+      "process_cpu_seconds": 0.6462073062837461,
+      "exact_count": 276,
+      "p95_seconds": 1.0304943858995101,
+      "accepted": 0,
+      "correct_accepted": 0,
+      "accepted_by_kind": {},
+      "context_caps": 0,
+      "answer_caps": 0
+    },
+    "bm25_rewrite": {
+      "f1": 0.5452424240330104,
+      "em": 0.445,
+      "work_TF": 25.732322351423683,
+      "seconds": 1.0020264390754163,
+      "reader_TF": 19.486466817251838,
+      "writer_TF": 6.14705718551936,
+      "ranker_TF": 0.09879834865248,
+      "physical_queries": 2.0,
+      "retrieval_seconds": 0.36155741194321306,
+      "process_cpu_seconds": 0.9893878581787476,
+      "exact_count": 356,
+      "p95_seconds": 2.182289144548122,
+      "accepted": 0,
+      "correct_accepted": 0,
+      "accepted_by_kind": {},
+      "context_caps": 0,
+      "answer_caps": 1
+    },
+    "prefix_only": {
+      "f1": 0.5703276513057376,
+      "em": 0.46875,
+      "work_TF": 24.17760212768672,
+      "seconds": 0.9279968497430673,
+      "reader_TF": 18.33613248535552,
+      "writer_TF": 5.747678173722879,
+      "ranker_TF": 0.09379146860832,
+      "physical_queries": 1.9275,
+      "retrieval_seconds": 0.3496038284417591,
+      "process_cpu_seconds": 0.9158975568975032,
+      "exact_count": 375,
+      "p95_seconds": 2.159667524532414,
+      "accepted": 58,
+      "correct_accepted": 58,
+      "accepted_by_kind": {
+        "death": 2,
+        "birth": 23,
+        "film_release": 33
+      },
+      "context_caps": 0,
+      "answer_caps": 1
+    },
+    "relation_following": {
+      "f1": 0.5807860748266611,
+      "em": 0.48,
+      "work_TF": 23.63652169924384,
+      "seconds": 0.8888060262569343,
+      "reader_TF": 17.937337595648,
+      "writer_TF": 5.60729974511744,
+      "ranker_TF": 0.09188435847840001,
+      "physical_queries": 2.16375,
+      "retrieval_seconds": 0.3546777870017104,
+      "process_cpu_seconds": 0.8754391276887489,
+      "exact_count": 384,
+      "p95_seconds": 2.0893600155832246,
+      "accepted": 81,
+      "correct_accepted": 81,
+      "accepted_by_kind": {
+        "death": 2,
+        "birth": 24,
+        "film_release": 38,
+        "director_death": 6,
+        "director_birth": 11
+      },
+      "context_caps": 0,
+      "answer_caps": 1
+    }
+  },
+  "comparisons": {
+    "prefix_only_minus_bm25_rewrite": {
+      "f1": {
+        "delta_pp": 2.508522727272727,
+        "paired95_ci_pp": [
+          1.4335227272727273,
+          3.675568181818181
+        ],
+        "gains": 23,
+        "harms": 4
+      },
+      "em": {
+        "delta_pp": 2.375,
+        "paired95_ci_pp": [
+          1.25,
+          3.5000000000000004
+        ],
+        "gains": 21,
+        "harms": 2
+      },
+      "work_TF": {
+        "ratio": 0.9395810373232424,
+        "paired95_ratio_ci": [
+          0.923040559522138,
+          0.9549848149525267
+        ]
+      },
+      "seconds": {
+        "ratio": 0.9261201237357997,
+        "paired95_ratio_ci": [
+          0.869585228807132,
+          0.9866080876817064
+        ]
+      },
+      "p95_ratio": 0.9896339950770402
+    },
+    "relation_following_minus_prefix_only": {
+      "f1": {
+        "delta_pp": 1.045842352092352,
+        "paired95_ci_pp": [
+          0.38731962481962484,
+          1.8414912518037523
+        ],
+        "gains": 11,
+        "harms": 3
+      },
+      "em": {
+        "delta_pp": 1.125,
+        "paired95_ci_pp": [
+          0.5,
+          1.875
+        ],
+        "gains": 9,
+        "harms": 0
+      },
+      "work_TF": {
+        "ratio": 0.9776205917532547,
+        "paired95_ratio_ci": [
+          0.9677426441982895,
+          0.9861934376860121
+        ]
+      },
+      "seconds": {
+        "ratio": 0.9577683658118197,
+        "paired95_ratio_ci": [
+          0.9025094452944745,
+          1.016900664476503
+        ]
+      },
+      "p95_ratio": 0.9674452163814373
+    },
+    "relation_following_minus_bm25_rewrite": {
+      "f1": {
+        "delta_pp": 3.5543650793650796,
+        "paired95_ci_pp": [
+          2.296031746031746,
+          4.958333333333334
+        ],
+        "gains": 30,
+        "harms": 3
+      },
+      "em": {
+        "delta_pp": 3.5000000000000004,
+        "paired95_ci_pp": [
+          2.25,
+          4.875
+        ],
+        "gains": 30,
+        "harms": 2
+      },
+      "work_TF": {
+        "ratio": 0.9185537697080851,
+        "paired95_ratio_ci": [
+          0.900278176433033,
+          0.9357175282749713
+        ]
+      },
+      "seconds": {
+        "ratio": 0.887008557455877,
+        "paired95_ratio_ci": [
+          0.8333929476720603,
+          0.9434434517213705
+        ]
+      },
+      "p95_ratio": 0.9574166745057334
+    },
+    "prefix_only_minus_bm25_direct": {
+      "f1": {
+        "delta_pp": 12.627297169714025,
+        "paired95_ci_pp": [
+          9.773577508540562,
+          15.562348346846207
+        ],
+        "gains": 178,
+        "harms": 60
+      },
+      "em": {
+        "delta_pp": 12.375,
+        "paired95_ci_pp": [
+          9.375,
+          15.5
+        ],
+        "gains": 129,
+        "harms": 30
+      },
+      "work_TF": {
+        "ratio": 1.3565677992293004,
+        "paired95_ratio_ci": [
+          1.3239385629475044,
+          1.3890883195417716
+        ]
+      },
+      "seconds": {
+        "ratio": 1.4240252366974258,
+        "paired95_ratio_ci": [
+          1.3617045170941027,
+          1.4880123095711633
+        ]
+      },
+      "p95_ratio": 2.0957586514624804
+    }
+  },
+  "strata": {
+    "bridge_comparison": {
+      "bm25_direct": {
+        "questions": 200,
+        "exact_count": 119,
+        "accepted": 0
+      },
+      "bm25_rewrite": {
+        "questions": 200,
+        "exact_count": 126,
+        "accepted": 0
+      },
+      "prefix_only": {
+        "questions": 200,
+        "exact_count": 126,
+        "accepted": 0
+      },
+      "relation_following": {
+        "questions": 200,
+        "exact_count": 133,
+        "accepted": 17
+      }
+    },
+    "comparison": {
+      "bm25_direct": {
+        "questions": 200,
+        "exact_count": 122,
+        "accepted": 0
+      },
+      "bm25_rewrite": {
+        "questions": 200,
+        "exact_count": 124,
+        "accepted": 0
+      },
+      "prefix_only": {
+        "questions": 200,
+        "exact_count": 144,
+        "accepted": 58
+      },
+      "relation_following": {
+        "questions": 200,
+        "exact_count": 146,
+        "accepted": 64
+      }
+    },
+    "compositional": {
+      "bm25_direct": {
+        "questions": 200,
+        "exact_count": 27,
+        "accepted": 0
+      },
+      "bm25_rewrite": {
+        "questions": 200,
+        "exact_count": 86,
+        "accepted": 0
+      },
+      "prefix_only": {
+        "questions": 200,
+        "exact_count": 85,
+        "accepted": 0
+      },
+      "relation_following": {
+        "questions": 200,
+        "exact_count": 85,
+        "accepted": 0
+      }
+    },
+    "inference": {
+      "bm25_direct": {
+        "questions": 200,
+        "exact_count": 8,
+        "accepted": 0
+      },
+      "bm25_rewrite": {
+        "questions": 200,
+        "exact_count": 20,
+        "accepted": 0
+      },
+      "prefix_only": {
+        "questions": 200,
+        "exact_count": 20,
+        "accepted": 0
+      },
+      "relation_following": {
+        "questions": 200,
+        "exact_count": 20,
+        "accepted": 0
+      }
+    }
+  },
+  "primary_joint_conditions": {
+    "f1_positive_lower_bound": true,
+    "em_positive_lower_bound": true,
+    "model_work_upper_ratio_below_one": true,
+    "actual_latency_upper_ratio_below_one": true,
+    "p95_point_ratio_at_most_1_1": true
+  },
+  "primary_joint_improvement_confirmed": true,
+  "primary_margin_sensitivity": {
+    "0.5": {
+      "f1": true,
+      "em": true
+    },
+    "1.0": {
+      "f1": true,
+      "em": true
+    },
+    "2.0": {
+      "f1": true,
+      "em": true
+    },
+    "3.0": {
+      "f1": true,
+      "em": true
+    }
+  },
+  "official_scorer": {
+    "path": "/Users/marco/Documents/ChatGPT/aaai 2027/research_audits/musique_evidence_control_20261114/data/twowiki_source/official/2wikimultihop_evaluate_v1.1.py",
+    "sha256": "7c09ee2ec98c7ecb57df79eb68dba22eb381ab58d50e730dfcefafb4dda31458"
+  },
+  "replay": {
+    "status": "passed",
+    "requests": 3200,
+    "model_calls": 5322,
+    "rankings": 2261,
+    "physical_queries_verified": 5673,
+    "unique_SQL_reexecutions": 2642,
+    "max_BM25_score_error": 2.842170943040401e-14,
+    "full_policy_and_prompt_reconstruction": true,
+    "prefix_charged_once": true,
+    "no_gold_in_runtime": true,
+    "elapsed_seconds": 193.16427525004838
+  },
+  "elapsed_seconds": 193.40154433308635,
+  "scope": "Locked unseen-question/evaluated-support-title confirmation on balanced2Wiki only; actual independent request timing, single run per endpoint; no MuSiQue transfer claim. Secondary contrasts descriptive/unadjusted."
+}

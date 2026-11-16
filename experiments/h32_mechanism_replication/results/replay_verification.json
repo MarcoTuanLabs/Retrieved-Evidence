@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "requests": 1772,
+  "model_calls": 2572,
+  "baseline_requests": 800,
+  "mechanism_requests": 972,
+  "rankings": 800,
+  "retrievals": 1600,
+  "unique_SQL_reexecutions": 1600,
+  "max_BM25_error": 2.842170943040401e-14,
+  "all_prompt_tokens_and_output_tokens_verified": true,
+  "all_costs_recomputed": true,
+  "all_schedules_verified": true,
+  "gold_in_runtime": false
+}

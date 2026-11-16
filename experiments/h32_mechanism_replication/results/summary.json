@@ -1,0 +1,652 @@
+{
+  "baseline_replication": {
+    "questions": 800,
+    "f1": {
+      "delta_pp": -0.04147727272727273,
+      "paired95_ci_pp": [
+        -0.375,
+        0.2210227272727273
+      ],
+      "gains": 3,
+      "harms": 3
+    },
+    "em": {
+      "delta_pp": -0.125,
+      "paired95_ci_pp": [
+        -0.375,
+        0.0
+      ],
+      "gains": 0,
+      "harms": 1
+    },
+    "work_TF": {
+      "ratio": 0.9989712478579401,
+      "paired95_ratio_ci": [
+        0.996965701803616,
+        1.0005291823696558
+      ]
+    },
+    "margin_sensitivity": {
+      "0.5": {
+        "f1": true,
+        "em": true
+      },
+      "1": {
+        "f1": true,
+        "em": true
+      },
+      "2": {
+        "f1": true,
+        "em": true
+      },
+      "3": {
+        "f1": true,
+        "em": true
+      }
+    },
+    "first": {
+      "questions": 800,
+      "f1": 0.5452424240330104,
+      "em": 0.445,
+      "work_TF": 25.732322351423683,
+      "seconds": 1.0020264390754163,
+      "exact_equivalent": 356.0
+    },
+    "repeat": {
+      "questions": 800,
+      "f1": 0.5448276513057376,
+      "em": 0.44375,
+      "work_TF": 25.70585016968448,
+      "seconds": 1.910076629455434,
+      "exact_equivalent": 355.0
+    },
+    "answer_changed": 9,
+    "scope": "One full independent baseline repeat; same question panel, not 800 new questions; absolute cross-run latency is descriptive because allocated CPU resources may differ.",
+    "writer_input_same": 800,
+    "writer_text_changed": 22,
+    "final_documents_changed": 13
+  },
+  "shared_fallback": {
+    "H31_original": {
+      "prefix_only": {
+        "comparison": {
+          "questions": 800,
+          "f1": {
+            "delta_pp": 2.5,
+            "paired95_ci_pp": [
+              1.5,
+              3.6249999999999996
+            ],
+            "gains": 20,
+            "harms": 0
+          },
+          "em": {
+            "delta_pp": 2.5,
+            "paired95_ci_pp": [
+              1.5,
+              3.6249999999999996
+            ],
+            "gains": 20,
+            "harms": 0
+          },
+          "work_TF": {
+            "ratio": 0.9404283212541122,
+            "paired95_ratio_ci": [
+              0.9241680451614811,
+              0.9556855871460835
+            ]
+          },
+          "margin_sensitivity": {
+            "0.5": {
+              "f1": true,
+              "em": true
+            },
+            "1": {
+              "f1": true,
+              "em": true
+            },
+            "2": {
+              "f1": true,
+              "em": true
+            },
+            "3": {
+              "f1": true,
+              "em": true
+            }
+          }
+        },
+        "exact_count": 376,
+        "f1": 0.5702424240330104,
+        "work_TF": 24.199404710919044,
+        "scope": "Offline shared fallback; no newly measured full policy latency, no extra independent sample."
+      },
+      "relation_following": {
+        "comparison": {
+          "questions": 800,
+          "f1": {
+            "delta_pp": 3.5833333333333335,
+            "paired95_ci_pp": [
+              2.375,
+              4.916666666666667
+            ],
+            "gains": 29,
+            "harms": 0
+          },
+          "em": {
+            "delta_pp": 3.6249999999999996,
+            "paired95_ci_pp": [
+              2.375,
+              5.0
+            ],
+            "gains": 29,
+            "harms": 0
+          },
+          "work_TF": {
+            "ratio": 0.9194801984544325,
+            "paired95_ratio_ci": [
+              0.9009261371893347,
+              0.9370480946425482
+            ]
+          },
+          "margin_sensitivity": {
+            "0.5": {
+              "f1": true,
+              "em": true
+            },
+            "1": {
+              "f1": true,
+              "em": true
+            },
+            "2": {
+              "f1": true,
+              "em": true
+            },
+            "3": {
+              "f1": true,
+              "em": true
+            }
+          }
+        },
+        "exact_count": 385,
+        "f1": 0.5810757573663436,
+        "work_TF": 23.66036086238048,
+        "scope": "Offline shared fallback; no newly measured full policy latency, no extra independent sample."
+      }
+    },
+    "H32_repeat": {
+      "prefix_only": {
+        "comparison": {
+          "questions": 800,
+          "f1": {
+            "delta_pp": 2.5,
+            "paired95_ci_pp": [
+              1.5,
+              3.6249999999999996
+            ],
+            "gains": 20,
+            "harms": 0
+          },
+          "em": {
+            "delta_pp": 2.5,
+            "paired95_ci_pp": [
+              1.5,
+              3.6249999999999996
+            ],
+            "gains": 20,
+            "harms": 0
+          },
+          "work_TF": {
+            "ratio": 0.9403688585518298,
+            "paired95_ratio_ci": [
+              0.9240911230633817,
+              0.955631289062814
+            ]
+          },
+          "margin_sensitivity": {
+            "0.5": {
+              "f1": true,
+              "em": true
+            },
+            "1": {
+              "f1": true,
+              "em": true
+            },
+            "2": {
+              "f1": true,
+              "em": true
+            },
+            "3": {
+              "f1": true,
+              "em": true
+            }
+          }
+        },
+        "exact_count": 375,
+        "f1": 0.5698276513057376,
+        "work_TF": 24.172980982170557,
+        "scope": "Offline shared fallback; no newly measured full policy latency, no extra independent sample."
+      },
+      "relation_following": {
+        "comparison": {
+          "questions": 800,
+          "f1": {
+            "delta_pp": 3.5833333333333335,
+            "paired95_ci_pp": [
+              2.375,
+              4.916666666666667
+            ],
+            "gains": 29,
+            "harms": 0
+          },
+          "em": {
+            "delta_pp": 3.6249999999999996,
+            "paired95_ci_pp": [
+              2.375,
+              5.0
+            ],
+            "gains": 29,
+            "harms": 0
+          },
+          "work_TF": {
+            "ratio": 0.919434402547268,
+            "paired95_ratio_ci": [
+              0.9008066222397209,
+              0.9369479416490472
+            ]
+          },
+          "margin_sensitivity": {
+            "0.5": {
+              "f1": true,
+              "em": true
+            },
+            "1": {
+              "f1": true,
+              "em": true
+            },
+            "2": {
+              "f1": true,
+              "em": true
+            },
+            "3": {
+              "f1": true,
+              "em": true
+            }
+          }
+        },
+        "exact_count": 384,
+        "f1": 0.580660984639071,
+        "work_TF": 23.63484299273344,
+        "scope": "Offline shared fallback; no newly measured full policy latency, no extra independent sample."
+      }
+    }
+  },
+  "mechanism_tables": {
+    "prefix58": {
+      "initial5": {
+        "questions": 58,
+        "f1": 0.751231527093596,
+        "em": 0.7413793103448276,
+        "work_TF": 8.43042352636469,
+        "seconds": 0.23990710190732847,
+        "exact_equivalent": 43.0
+      },
+      "rule_context": {
+        "questions": 58,
+        "f1": 0.751231527093596,
+        "em": 0.7413793103448276,
+        "work_TF": 8.43042352636469,
+        "seconds": 0.2560438907453683,
+        "exact_equivalent": 43.0
+      },
+      "evidence_documents": {
+        "questions": 58,
+        "f1": 0.9770114942528735,
+        "em": 0.9655172413793104,
+        "work_TF": 4.549836948833104,
+        "seconds": 0.3648245522415201,
+        "exact_equivalent": 56.0
+      },
+      "rewrite_final10": {
+        "questions": 58,
+        "f1": 0.6551724137931034,
+        "em": 0.6551724137931034,
+        "work_TF": 15.571126683259587,
+        "seconds": 0.3266764830974541,
+        "exact_equivalent": 38.0
+      },
+      "rule": {
+        "questions": 58,
+        "f1": 1.0,
+        "em": 1.0,
+        "work_TF": 0.0,
+        "seconds": null,
+        "exact_equivalent": 58.0
+      }
+    },
+    "added23": {
+      "initial5": {
+        "questions": 23,
+        "f1": 0.5797101449275361,
+        "em": 0.5652173913043478,
+        "work_TF": 7.387367438335999,
+        "seconds": 0.2938763724936955,
+        "exact_equivalent": 13.0
+      },
+      "rule_context": {
+        "questions": 23,
+        "f1": 0.6614906832298137,
+        "em": 0.6521739130434783,
+        "work_TF": 16.026989651522786,
+        "seconds": 0.35277519894061965,
+        "exact_equivalent": 15.0
+      },
+      "evidence_documents": {
+        "questions": 23,
+        "f1": 0.782608695652174,
+        "em": 0.782608695652174,
+        "work_TF": 6.113904276435478,
+        "seconds": 0.35112309368813166,
+        "exact_equivalent": 18.0
+      },
+      "rewrite_final10": {
+        "questions": 23,
+        "f1": 0.6231884057971014,
+        "em": 0.6086956521739131,
+        "work_TF": 13.806187263287653,
+        "seconds": 0.2604679093034803,
+        "exact_equivalent": 14.0
+      },
+      "rule": {
+        "questions": 23,
+        "f1": 1.0,
+        "em": 1.0,
+        "work_TF": 0.0,
+        "seconds": null,
+        "exact_equivalent": 23.0
+      }
+    },
+    "all81": {
+      "initial5": {
+        "questions": 81,
+        "f1": 0.702527924750147,
+        "em": 0.691358024691358,
+        "work_TF": 8.13424710630716,
+        "seconds": 0.2552317096046919,
+        "exact_equivalent": 56.0
+      },
+      "rule_context": {
+        "questions": 81,
+        "f1": 0.7257495590828924,
+        "em": 0.7160493827160493,
+        "work_TF": 10.58747316684168,
+        "seconds": 0.283510805418094,
+        "exact_equivalent": 58.0
+      },
+      "evidence_documents": {
+        "questions": 81,
+        "f1": 0.9218106995884773,
+        "em": 0.9135802469135802,
+        "work_TF": 4.993954831979457,
+        "seconds": 0.36093401462759495,
+        "exact_equivalent": 74.0
+      },
+      "rewrite_final10": {
+        "questions": 81,
+        "f1": 0.6460905349794238,
+        "em": 0.6419753086419753,
+        "work_TF": 15.069971045489778,
+        "seconds": 0.30787651769916524,
+        "exact_equivalent": 52.0
+      },
+      "rule": {
+        "questions": 81,
+        "f1": 1.0,
+        "em": 1.0,
+        "work_TF": 0.0,
+        "seconds": null,
+        "exact_equivalent": 81.0
+      }
+    }
+  },
+  "mechanism_contrasts": {
+    "prefix58:rule_minus_initial5": {
+      "questions": 58,
+      "f1": {
+        "delta_pp": 24.876847290640395,
+        "paired95_ci_pp": [
+          14.5320197044335,
+          36.206896551724135
+        ],
+        "gains": 15,
+        "harms": 0
+      },
+      "em": {
+        "delta_pp": 25.862068965517242,
+        "paired95_ci_pp": [
+          15.517241379310345,
+          37.93103448275862
+        ],
+        "gains": 15,
+        "harms": 0
+      },
+      "margin_sensitivity": {
+        "0.5": {
+          "f1": true,
+          "em": true
+        },
+        "1": {
+          "f1": true,
+          "em": true
+        },
+        "2": {
+          "f1": true,
+          "em": true
+        },
+        "3": {
+          "f1": true,
+          "em": true
+        }
+      }
+    },
+    "prefix58:initial5_minus_rewrite_final10": {
+      "questions": 58,
+      "f1": {
+        "delta_pp": 9.60591133004926,
+        "paired95_ci_pp": [
+          -1.4839901477832453,
+          20.935960591133004
+        ],
+        "gains": 9,
+        "harms": 3
+      },
+      "em": {
+        "delta_pp": 8.620689655172415,
+        "paired95_ci_pp": [
+          -1.7241379310344827,
+          19.008620689654546
+        ],
+        "gains": 8,
+        "harms": 3
+      },
+      "margin_sensitivity": {
+        "0.5": {
+          "f1": false,
+          "em": false
+        },
+        "1": {
+          "f1": false,
+          "em": false
+        },
+        "2": {
+          "f1": true,
+          "em": true
+        },
+        "3": {
+          "f1": true,
+          "em": true
+        }
+      }
+    },
+    "added23:rule_context_minus_initial5": {
+      "questions": 23,
+      "f1": {
+        "delta_pp": 8.178053830227745,
+        "paired95_ci_pp": [
+          -11.180124223602483,
+          27.536231884057973
+        ],
+        "gains": 4,
+        "harms": 2
+      },
+      "em": {
+        "delta_pp": 8.695652173913043,
+        "paired95_ci_pp": [
+          -13.043478260869565,
+          30.434782608695656
+        ],
+        "gains": 4,
+        "harms": 2
+      },
+      "margin_sensitivity": {
+        "0.5": {
+          "f1": false,
+          "em": false
+        },
+        "1": {
+          "f1": false,
+          "em": false
+        },
+        "2": {
+          "f1": false,
+          "em": false
+        },
+        "3": {
+          "f1": false,
+          "em": false
+        }
+      }
+    },
+    "added23:rule_minus_rule_context": {
+      "questions": 23,
+      "f1": {
+        "delta_pp": 33.85093167701863,
+        "paired95_ci_pp": [
+          16.459627329192546,
+          52.17391304347826
+        ],
+        "gains": 8,
+        "harms": 0
+      },
+      "em": {
+        "delta_pp": 34.78260869565217,
+        "paired95_ci_pp": [
+          17.391304347826086,
+          52.17391304347826
+        ],
+        "gains": 8,
+        "harms": 0
+      },
+      "margin_sensitivity": {
+        "0.5": {
+          "f1": true,
+          "em": true
+        },
+        "1": {
+          "f1": true,
+          "em": true
+        },
+        "2": {
+          "f1": true,
+          "em": true
+        },
+        "3": {
+          "f1": true,
+          "em": true
+        }
+      }
+    },
+    "all81:evidence_documents_minus_rule_context": {
+      "questions": 81,
+      "f1": {
+        "delta_pp": 19.606114050558492,
+        "paired95_ci_pp": [
+          10.670194003527337,
+          29.041740152851265
+        ],
+        "gains": 18,
+        "harms": 2
+      },
+      "em": {
+        "delta_pp": 19.753086419753085,
+        "paired95_ci_pp": [
+          9.876543209876543,
+          29.629629629629626
+        ],
+        "gains": 18,
+        "harms": 2
+      },
+      "margin_sensitivity": {
+        "0.5": {
+          "f1": true,
+          "em": true
+        },
+        "1": {
+          "f1": true,
+          "em": true
+        },
+        "2": {
+          "f1": true,
+          "em": true
+        },
+        "3": {
+          "f1": true,
+          "em": true
+        }
+      }
+    }
+  },
+  "within_context_variation": {
+    "initial5": {
+      "questions": 81,
+      "answer_varied": 0
+    },
+    "rule_context": {
+      "questions": 81,
+      "answer_varied": 0
+    },
+    "evidence_documents": {
+      "questions": 81,
+      "answer_varied": 0
+    },
+    "rewrite_final10": {
+      "questions": 81,
+      "answer_varied": 0
+    }
+  },
+  "requests": 1772,
+  "model_calls": 2572,
+  "independent_questions": 800,
+  "mechanism_questions": 81,
+  "mechanism_repetitions": 3,
+  "repeated_rows_counted_as_independent": false,
+  "context_caps": 0,
+  "generation_caps": 1,
+  "inference": "10000 paired question bootstrap draws, seed1432; average repeated readers within question before resampling; all H32 contrasts exploratory/unadjusted, no new independent confirmation.",
+  "cost_scope": "Mechanism tables contain reader-only work/time. Shared-fallback policies include full baseline neural work but have no new integrated latency measurement.",
+  "replay": {
+    "status": "passed",
+    "requests": 1772,
+    "model_calls": 2572,
+    "baseline_requests": 800,
+    "mechanism_requests": 972,
+    "rankings": 800,
+    "retrievals": 1600,
+    "unique_SQL_reexecutions": 1600,
+    "max_BM25_error": 2.842170943040401e-14,
+    "all_prompt_tokens_and_output_tokens_verified": true,
+    "all_costs_recomputed": true,
+    "all_schedules_verified": true,
+    "gold_in_runtime": false
+  },
+  "elapsed_seconds": 114.26959419250488
+}

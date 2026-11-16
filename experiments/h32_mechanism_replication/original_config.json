@@ -1,0 +1,76 @@
+{
+  "seed": 1432,
+  "questions": 800,
+  "planned_requests": 1772,
+  "maximum_model_calls": 2572,
+  "maximum_writer_calls": 800,
+  "methods": [
+    "bm25_rewrite"
+  ],
+  "datasets": {
+    "twowiki": {
+      "questions": 800,
+      "documents": 384857,
+      "index": "indices/twowiki.sqlite",
+      "index_sha256": "e415affea92e1fe6add7cf99a65d7be8f980a6486db2cbfff25b92a70c31d75b"
+    }
+  },
+  "models": {
+    "qwen4b": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "total_parameters": 4022468096
+    },
+    "qwen8b": {
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "total_parameters": 8190735360
+    }
+  },
+  "model_cache": "/workspace/h32_model_cache",
+  "output": "/workspace/h32_capture",
+  "vault_output": "/vault/evidence_control_h32_supplements_20261116",
+  "startup_seconds": 600,
+  "worker_seconds": 3300,
+  "capture_deadline_unix": 1794823500,
+  "goal_deadline_unix": 1794825000,
+  "gpu": "H100 SXM 80GB",
+  "resume_from": "/workspace/h31_phase0_capture",
+  "resume_mirror": "/workspace/h31_phase0_backup",
+  "mechanism_questions": 81,
+  "mechanism_requests": 972,
+  "vault_adapter": [
+    "/usr/local/lib/gputw/parrot_run",
+    "-T",
+    "30",
+    "-a",
+    "address",
+    "-Q",
+    "-b",
+    "16777216",
+    "-d",
+    "clear",
+    "-d",
+    "error",
+    "-d",
+    "fatal",
+    "-o",
+    "/tmp/h31-parrot.log",
+    "-O",
+    "1M",
+    "--disable-service",
+    "multi",
+    "--disable-service",
+    "anonftp",
+    "--disable-service",
+    "ftp",
+    "--disable-service",
+    "http",
+    "--disable-service",
+    "hdfs",
+    "--disable-service",
+    "grow",
+    "-M",
+    "/vault=/chirp/127.0.0.1:19094/"
+  ]
+}

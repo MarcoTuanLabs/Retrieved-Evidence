@@ -1,0 +1,124 @@
+{
+  "status": "scored_pending_disposition",
+  "questions": 200,
+  "source_groups": 186,
+  "table": [
+    {
+      "method": "paid_draft_fixed10",
+      "f1": 0.32504749095074176,
+      "em": 0.215,
+      "work_TF": 35.13928907602432,
+      "seconds": 1.0471906938304891,
+      "p95_seconds": 2.181302127166418
+    },
+    {
+      "method": "no_draft_fixed10",
+      "f1": 0.32504749095074176,
+      "em": 0.215,
+      "work_TF": 24.58692438593024,
+      "seconds": 0.603033507152577,
+      "p95_seconds": 1.065580843179486
+    }
+  ],
+  "candidate_minus_reference": {
+    "f1": {
+      "delta_pp": 0.0,
+      "source95_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "margins_pp": {
+        "0.5": true,
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    "em": {
+      "delta_pp": 0.0,
+      "source95_ci_pp": [
+        0.0,
+        0.0
+      ],
+      "margins_pp": {
+        "0.5": true,
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    "work_TF": {
+      "ratio": 0.6996989703672177,
+      "source95_ratio_ci": [
+        0.6977643025108826,
+        0.7016074579024467
+      ]
+    },
+    "seconds": {
+      "ratio": 0.575858351974804,
+      "source95_ratio_ci": [
+        0.541266369993751,
+        0.611269565985208
+      ]
+    }
+  },
+  "p95_ratio": 0.48850676387672626,
+  "paired_exact_checks_passed": 200,
+  "mismatches": 0,
+  "subgroups": {
+    "2": {
+      "paid_draft_fixed10": {
+        "f1": 0.3547656550203239,
+        "em": 0.23870967741935484,
+        "work_TF": 35.18039383716996,
+        "seconds": 1.016621916428689
+      },
+      "no_draft_fixed10": {
+        "f1": 0.3547656550203239,
+        "em": 0.23870967741935484,
+        "work_TF": 24.594356517390864,
+        "seconds": 0.5892003547107321
+      }
+    },
+    "3": {
+      "paid_draft_fixed10": {
+        "f1": 0.18166248955722641,
+        "em": 0.07894736842105263,
+        "work_TF": 35.32448221659621,
+        "seconds": 1.1411486670380997
+      },
+      "no_draft_fixed10": {
+        "f1": 0.18166248955722641,
+        "em": 0.07894736842105263,
+        "work_TF": 24.74435045727663,
+        "seconds": 0.6260329387947231
+      }
+    },
+    "4": {
+      "paid_draft_fixed10": {
+        "f1": 0.44537815126050423,
+        "em": 0.42857142857142855,
+        "work_TF": 33.22377803040914,
+        "seconds": 1.214013196029035
+      },
+      "no_draft_fixed10": {
+        "f1": 0.44537815126050423,
+        "em": 0.42857142857142855,
+        "work_TF": 23.56775708770743,
+        "seconds": 0.7844849680217781
+      }
+    }
+  },
+  "preliminary_disposition": "keep_equivalent_lower_compute_baseline",
+  "replayed_model_calls": 1000,
+  "ranker_windows_costs_reconstructed": 400,
+  "ranker_inference_reexecuted": false,
+  "unique_retrievals": 400,
+  "max_retrieval_difference": 1.4210854715202004e-14,
+  "official_scorer": {
+    "path": "/Users/marco/Documents/ChatGPT/aaai 2027/research_audits/musique_pilot200_20261114/literature/official/metrics/answer.py",
+    "sha256": "10368f619b4d5ef5d83748c05a96c0afd332a14ab5c010740c98d58dfaefe974"
+  },
+  "wall_seconds": 9.90684179199161,
+  "scope": "Exposed200 development; one locked intervention; paired source bootstrap; no independent quality confirmation or novel mechanism claim"
+}
